@@ -1,0 +1,15 @@
+<table class="template-table">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Last updated</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let template of templates$ | async; trackBy: templateTrackBy"
+  class="template-table__row">
+    <td><a class="template-table__name" (click)="redirectToTemplateDetails(template.id)">{{template.name}}</a></td>
+    <td>{{template.modified | date: 'medium'}}</td>
+  </tr>
+  </tbody>
+</table>
