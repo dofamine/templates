@@ -1,0 +1,9 @@
+<form>
+  <label> font-size:
+    <input [(ngModel)]="fontSize" type="number"> px
+  </label>
+  <label> text:
+    <input [(ngModel)]="text" type="text">
+  </label>
+  <button (click)="onComplete(text, fontSize)">done</button>
+</form>

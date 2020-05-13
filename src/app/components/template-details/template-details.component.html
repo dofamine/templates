@@ -1,0 +1,5 @@
+<div appTemplateEditable (onChanged)="onChanged($event)" [innerHtml]="safeTemplate$ | async"></div>
+<div class="wrapper" *ngIf="isSaving">
+  <div class="loader"></div>
+</div>
+

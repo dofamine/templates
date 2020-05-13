@@ -1,0 +1,19 @@
+.template-table {
+  border-collapse: collapse;
+  border: 2px solid gray;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+
+  &__row {
+    border: 1px solid gray;
+  }
+
+  &__name {
+
+    &:hover {
+      cursor: pointer;
+      background: cyan;
+    }
+  }
+}
